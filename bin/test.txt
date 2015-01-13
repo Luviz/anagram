@@ -1,0 +1,42 @@
+a b c d
+a b d c
+		a b c d //m rem -> reswap -> swap next 
+a d b c						abcd > acbd
+a d c b 
+a c d b
+
+0 1 2 3 
+a b c d 
+a b d c 
+a c b d 
+a c 
+			a b c d 
+swap (0,1)	b a c d
+swap (1,2)	b c a d
+swap (2,3)	b c d a
+//hit lim
+//try repting
+swap (0,1)	c b d a
+swap (1,2)	c d b a
+swap (2,3)	c d a b
+//hit lim
+//try repting
+swap (0,1)	
+swap (1,2)	
+swap (2,3)	
+//hit lim
+//try repting
+swap (0,1)	
+swap (1,2)	
+swap (2,3)		
+
+----------------
+for(6){
+	for(3){
+		for(1){
+			swap(2,3)
+		}
+		swap(1,2)
+	}
+	swap(0,1)
+}
